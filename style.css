@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+
+
 @font-face {
     font-family: "Japan Wave";
     src: url("https://db.onlinewebfonts.com/t/e34270355410b20f6d6edde431e13b72.eot");
@@ -12,7 +14,6 @@
 
 
 /* Resetting default margin and padding */
-/* Resetting default margin and padding */
 * {
   margin: 0;
   padding: 0;
@@ -20,16 +21,19 @@
   font-family: 'Arial', sans-serif;
 }
 
+
 body {
   background-color: #FFFFFF;
   min-height: 100vh;
   overflow-x: hidden;
 }
 
+
 #main{
   background-image: url('11242_one_piece\ \(1\).jpg');
   background-size: cover;
 }
+
 
 header{
   position: absolute;
@@ -43,6 +47,7 @@ header{
   z-index: 100;
 }
   
+
 .NIKA{
   font-family: 'Japan Wave';
   font-weight: bolder;
@@ -50,6 +55,7 @@ header{
   color:red;
   pointer-events: none;
 }
+
 
 .navigation a {
   position: relative;
@@ -65,6 +71,7 @@ header{
 
 }
 
+
 .navigation a:hover,
 .navigation a.active{
   background: #40A2E3;
@@ -72,14 +79,16 @@ header{
 
 }
 
+
 .one{
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-
 }
+
+
 #mainheading {
   display: flex;
   justify-content: center;
@@ -90,6 +99,8 @@ header{
   font-weight: bolder;
   font-size: 125px;
 }
+
+
 #mainheading:hover{
   color: red;
 }
@@ -105,6 +116,7 @@ header{
   animation: splatter 1s ease-out forwards;
 }
 
+
 @keyframes splatter {
   0% {
     transform: scale(0);
@@ -114,6 +126,7 @@ header{
     opacity: 0;
   }
 }
+
 
 .navb{
   font-size: 20px;
@@ -126,16 +139,19 @@ header{
   display: none;
 }
 
+
 #characterList.show {
   display: flex;
   flex-wrap: wrap;
 }
+
 
 #characterList img {
   width: 100px; /* Adjust image size as needed */
   margin: 10px; /* Adjust spacing between images */
 }
 #chooseCharacterButton {
+  background-color: #333;
   padding: 10px 20px; /* Adjust padding as needed */
   border: 2px solid black; /* Border color */
   background-color: transparent; /* Transparent background */
@@ -148,30 +164,34 @@ header{
   transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
 }
 
+
 #chooseCharacterButton:hover {
   background-color: #40A2E3; /* Background color on hover */
   color: black; /* Text color on hover */
 }
+
+
 #characterList {
   display: none;
   position: absolute;
   top: calc(100% + 10px); /* Position it just below the button with a small gap */
-  left: 50%; /* Position it at the center */
+  left: 68%; /* Position it at the center */
   transform: translateX(-50%); /* Center horizontally */
-  background-color: transparent; /* Background color for the character list */
+  background-color: rgba(244, 48, 48, 0.842); /* Background color for the character list */
   padding: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for visual separation */
   z-index: 1; /* Ensure it appears above other content */
-  max-width: 900px; /* Limit the maximum width of the character list */
-  border-radius: 10px; /* Set border radius for smooth edges */
+  max-width: 500px; /* Limit the maximum width of the character list */
+  border-radius: 25px; /* Set border radius for smooth edges */
 }
 
 
 #characterList img {
   width: 50px;
-  height: 50px; /* Adjust image size as needed */
-  margin: 12px; /* Adjust spacing between images */
+  height: 60px; /* Adjust image size as needed */
+  margin: 20px; /* Adjust spacing between images */
 }
+
 
 .container {
   padding: 10px;
@@ -180,8 +200,6 @@ header{
   gap: 20px; /* Adjust the gap between cards as needed */
   justify-content: center; /* Centers the cards horizontally */
 }
-
-/* Keyframe for footer animation */
 
 
 /*cards*/
@@ -209,6 +227,8 @@ header{
   transition: opacity 100000s ease-in-out; /* Smooth opacity transition */
   display: block; /* Ensuring the image is a block element */
 }
+
+
 .card:hover .img img {
   width: 7em;
   height: 7em;
@@ -218,6 +238,7 @@ header{
   transition: background 0.8s ease-in-out, color 0.8s ease-in-o /* Hide the image on hover */
 }
 
+
 .card span {
   font-weight: bold;
   color: white;
@@ -225,6 +246,7 @@ header{
   display: block;
   font-size: 1em;
 }
+
 
 .card .info {
   font-weight: 400;
@@ -235,6 +257,8 @@ header{
   margin: 1em;
   font-family:'Times New Roman', Times, serif;
 }
+
+
 .card .share {
   margin-top: 1em;
   display: flex;
@@ -242,10 +266,24 @@ header{
   gap: 1em;
 }
 
+
+.card .share a{
+ text-decoration: none;
+ color: black;
+}
+
+
+.card .share a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+
 .card a {
   color: white;
   transition: .4s ease-in-out;
 }
+
 
 .card:hover {
   font-family:'Times New Roman', Times, serif;
@@ -261,6 +299,7 @@ header{
   transition: background 0.8s ease-in-out, color 0.8s ease-in-o
 }
 
+
 .card button {
   padding: 0.8em 1.7em;
   display: block;
@@ -272,12 +311,15 @@ header{
   color: rgb(0, 0, 0);
   transition: background 0.8s ease-in-out, color 0.8s ease-in-out; /* Smooth button transition */
 }
+
+
 .card button:hover {
   background: red;
   color: white;
   cursor: pointer;
   transition: background 0.8s ease-in-out, color 0.8s ease-in-o
 }
+
 
 .card .name{
   font-family: 'Japan Wave';
@@ -295,6 +337,7 @@ footer {
   padding: 40px 0;
 }
 
+
 /* Styling footer content */
 .footer-content {
   width: 100%;
@@ -304,6 +347,7 @@ footer {
   justify-content: space-around;
 }
 
+
 /* Styling footer info section */
 .footer-info, .footer-links, .footer-contact {
   flex: 1;
@@ -311,11 +355,13 @@ footer {
   
 }
 
+
 /* Styling footer heading */
 .footer-info h3, .footer-links h3, .footer-contact h3 {
   color: #fff;
   font-size: 20px;
 }
+
 
 /* Styling footer links */
 .footer-links ul {
@@ -323,14 +369,17 @@ footer {
   padding: 0;
 }
 
+
 .footer-links ul li {
   margin-bottom: 10px;
 }
+
 
 .footer-links ul li a {
   color: #fff;
   text-decoration: none;
 }
+
 
 /* Styling social media icons */
 .social-links a {
@@ -340,9 +389,11 @@ footer {
   text-decoration: none;
 }
 
+
 .social-links a:hover {
   color: white; /* Light Coral color on hover */
 }
+
 
 /* Styling contact details */
 .contact-info {
