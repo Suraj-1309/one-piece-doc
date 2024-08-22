@@ -23,3 +23,4 @@ Here I used HTML, CSS and Javascript to code it.I make it completely using only 
    git clone https://github.com/yourusername/one-piece-doc.git
 
 ## To View to the website: 
+ https://suraj-1309.github.io/one-piece-doc/
