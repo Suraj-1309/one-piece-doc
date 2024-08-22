@@ -12,7 +12,7 @@ Here I used HTML, CSS and Javascript to code it.I make it completely using only 
 - **Responsive Design**: The site is fully responsive and looks great on any device, from desktops to mobile phones.
 - **Animated Effects**: Experience a dynamic and engaging interface with animations like hover effects and a blood-splat animation.
 - **Custom Fonts**: The site uses a special "Japan Wave" font to enhance the overall theme and feel.
-- 
+
 ### Prerequisites
 - Web Browser (Chrome, Firefox, etc.)
 - Basic understanding of HTML, CSS, and JavaScript.
